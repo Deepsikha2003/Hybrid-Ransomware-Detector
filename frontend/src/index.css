@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:#eef2f8; --fg:#0b1220; --muted:#5b6b82; --card:rgba(255,255,255,.75); --line:rgba(11,18,32,.10); }
+.dark { --bg:#04060b; --fg:#e6edf7; --muted:#8a99b3; --card:rgba(255,255,255,.045); --line:rgba(255,255,255,.09); }
+
+body { @apply bg-bg text-fg antialiased; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+.glass { @apply bg-card border border-line rounded-2xl backdrop-blur-xl; }
+.glass-hover { @apply transition hover:border-neon/40 hover:shadow-neon; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition disabled:opacity-50 disabled:cursor-not-allowed; }
+.btn-primary { @apply btn bg-neon text-black hover:brightness-110 shadow-neon; }
+.btn-ghost { @apply btn border border-line hover:border-neon/50; }
+.input { @apply w-full rounded-xl bg-transparent border border-line px-3.5 py-2.5 text-sm outline-none focus:border-neon; }
+.label { @apply text-xs font-medium text-muted mb-1 block; }
+.grid-bg { background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 48px 48px; mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%); }

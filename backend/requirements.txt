@@ -1,0 +1,15 @@
+fastapi>=0.115
+uvicorn>=0.30
+sqlalchemy>=2.0,<2.1
+pydantic[email]>=2.7
+python-multipart>=0.0.9
+PyJWT>=2.8
+bcrypt>=4.1
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+xgboost>=2.0
+joblib>=1.3
+reportlab>=4.0
+# optional extras:  pip install shap   (SHAP library; otherwise XGBoost's built-in TreeSHAP is used)
+#                   pip install psycopg2-binary   (only if you switch DATABASE_URL to PostgreSQL)

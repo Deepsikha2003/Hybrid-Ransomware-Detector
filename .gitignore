@@ -1,0 +1,8 @@
+.env
+node_modules/
+dist/
+__pycache__/
+*.pyc
+backend/uploads/
+backend/models/*.joblib
+backend/models/*.json
